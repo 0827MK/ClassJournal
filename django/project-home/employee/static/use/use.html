@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+        <title>～使い方講座～</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #4072B3;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">💡web版学級日誌の使い方💡</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="javascript:history.back()">≺≺≺ 戻る</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="main" style="background-color: rgba(112, 141, 247, 0.331);">
+        <!-- トップの画像の所 -->
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel" style="padding: 3% 30% 0 30%;">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                <img src="../image/home-all.png" class="d-block w-100" alt="..." style="margin-bottom: 25%;">
+                <div class="carousel-caption">
+                    <h5>web版学級日誌のホーム</h5>
+                    <p>ホームは主に日誌の一覧を表示します。</p>
+                </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                <img src="../image/admin-page.png" class="d-block w-100" alt="..."style="margin-bottom: 25%;">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>記録</h5>
+                    <p>記録は毎日の日誌を記録するためのページです。</p>
+                </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="accordion" id="accordionPanelsStayOpenExample" style="padding:2rem;">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                    ホームの使い方
+                </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                        <div class="row row-cols-1 row-cols-md-2 g-4">
+                            <div class="col">
+                                <div class="card">
+                                    <img src="../image/home-nav.png" class="card-img-top" alt="..." style="padding: 0.8rem;">
+                                    <div class="card-body" style="background-color: #c0c0c04e;">
+                                        <h5 class="card-title">header</h5>
+                                        <p class="card-text">[管理サイト] ☞ 記録ページに飛びます</p>
+                                        <p class="card-text">[一関高専HP] ☞ 一関高専のHPに飛びます</p>
+                                        <p class="card-text">[一関高専Moodle] ☞ 一関高専のMoodleに飛びます</p>
+                                        <p class="card-text">[その他] ☞ 使い方・・という項目が表示されます</p>
+                                        <p class="card-text">[使い方] ☞ このページに飛びます</p>
+                                        <p class="card-text">[カレンダー] ☞ カレンダーのページに飛びます</p>
+                                        <p class="card-text">[お絵描き] ☞ お絵描きのページに飛びます</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img src="../image/welcome-home.png" class="card-img-top" alt="..." style="padding: 0.8rem;">
+                                    <div class="card-body" style="background-color: #c0c0c04e;">
+                                        <h5 class="card-title">Record</h5>
+                                        <p class="card-text">[今日の日誌を書く] ☞ 記録ページに飛びます。後の操作は記録サイトの使い方に載っています</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img src="../image/record-small.png" class="card-img-top" alt="..." style="padding: 0.8rem;">
+                                    <div class="card-body" style="background-color: #c0c0c04e;">
+                                        <h5 class="card-title">Sample-Record-List</h5>
+                                        <p class="card-text">記録した項目のうち、記録者・所感・先生からを表示します</p>
+                                        <p class="card-text">[Show More] ☞ 記録したもののすべてを表示するページに飛びます</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img src="../image/record-big.png" class="card-img-top" alt="..." style="padding: 0.8rem;">
+                                    <div class="card-body"style="background-color: #c0c0c04e;">
+                                        <h5 class="card-title">Sample-Record</h5>
+                                        <p class="card-text">記録した項目すべてを表示します</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img src="../image/calendar.png" class="card-img-top" alt="..." style="padding: 0.8rem;">
+                                    <div class="card-body"style="background-color: #c0c0c04e;">
+                                        <h5 class="card-title">calendar</h5>
+                                        <p class="card-text">カレンダーを表示します。予定を確認することもできます。サイトに飛ぶと予定の追加もできます</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img src="../image/drow.png" class="card-img-top" alt="..." style="padding: 0.8rem;">
+                                    <div class="card-body"style="background-color: #c0c0c04e;">
+                                        <h5 class="card-title">drowing</h5>
+                                        <p class="card-text">お絵描きができます</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                    記録ページの使い方
+                </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body">
+                        <div class="row row-cols-1 row-cols-md-2 g-4">
+                            <div class="col">
+                                <div class="card">
+                                    <img src="../image/admin-page.png" class="card-img-top" alt="..." style="padding: 0.8rem;">
+                                    <div class="card-body"style="background-color: #c0c0c04e;">
+                                        <h5 class="card-title">Record-admin</h5>
+                                        <p class="card-text">[サイトを表示] ☞ web版学級日誌のホームに飛びます</p>
+                                        <p class="card-text">[パスワードの変更] ☞ パスワードを変更します</p>
+                                        <p class="card-text">[ログアウト] ☞ ログアウトします</p>
+                                        <p class="card-text">[Employee/Record] ☞ 日誌を追加します。クリックした後の操作はRecord(右→)に載っています。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img src="../image/record-admin.png" class="card-img-top" alt="..." style="padding: 0.8rem;">
+                                    <div class="card-body"style="background-color: #c0c0c04e;">
+                                        <h5 class="card-title">Record</h5>
+                                        <p class="card-text">[RECORD を追加] ☞ クリックして日誌を追加します</p>
+                                        <p class="card-text">その後、フォームを記入し、[保存]をクリックしたら日誌の記入は完了です</p>
+                                        <p class="card-text">⚠teacherフォームは先生が記入する欄です。学生は記入しないでください⚠</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                    先生方へ
+                </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                <div class="accordion-body">
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                        <div class="col">
+                            <div class="card">
+                                <img src="../image/admin-page.png" class="card-img-top" alt="..." style="padding: 0.8rem;">
+                                <div class="card-body"style="background-color: #c0c0c04e;">
+                                    <h5 class="card-title">Teacher</h5>
+                                    <p class="card-text">[サイトを表示] ☞ web版学級日誌のホームに飛びます</p>
+                                    <p class="card-text">[パスワードの変更] ☞ パスワードを変更します</p>
+                                    <p class="card-text">[ログアウト] ☞ ログアウトします</p>
+                                    <p class="card-text">[Employee/Record 変更する] ☞ 日誌を編集します。クリックした後の操作はRecord-Edit(右→)に載っています。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="../image/record-admin.png" class="card-img-top" alt="..." style="padding: 0.8rem;">
+                                <div class="card-body"style="background-color: #c0c0c04e;">
+                                    <h5 class="card-title">Record-Edit</h5>
+                                    <p class="card-text">[RECORD を変更後] ☞ 学生が記入した日誌を編集します</p>
+                                    <p class="card-text">その後、[先生から]を記入する日付の日誌を選択し、teacherフォームを記入し保存したら完了です</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+        
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        
+    </body>
+</html>

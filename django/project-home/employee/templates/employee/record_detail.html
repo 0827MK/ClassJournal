@@ -1,0 +1,28 @@
+{% extends 'employee/base.html' %}
+{% block loading %}
+
+{% endblock %}
+{% block content %}
+<div class="card-body">
+    <h3 class="card-header" style="background-color: #4072B3; color: white;">{{ record.created_at }}</h3>
+    <h6class="card-subtitle mb-2 text-muted">記録者：{{ record.person }}</h6class=>
+    <p class="card-text" style="margin: 1rem;">学校行事・連絡事項：{{ record.event }}</p>
+    <p class="card-text" style="margin: 1rem;">天気：{{ record.weather }}</p>
+    <p class="card-text" style="margin: 1rem;">1校時：科目：{{ record.subject1 }}</p>
+    <p class="card-text" style="margin: 1rem;">↑内容↑：{{ record.substance1 }}</p>
+    <p class="card-text" style="margin: 1rem;">2校時：科目：{{ record.subject2 }}</p>
+    <p class="card-text" style="margin: 1rem;">↑内容↑：{{ record.substance2 }}</p>
+    <p class="card-text" style="margin: 1rem;">3校時：科目：{{ record.subject3 }}</p>
+    <p class="card-text" style="margin: 1rem;">↑内容↑：{{ record.substance3 }}</p>
+    <p class="card-text" style="margin: 1rem;">4校時：科目：{{ record.subject4 }}</p>
+    <p class="card-text" style="margin: 1rem;">↑内容↑：{{ record.substance4 }}</p>
+    <p class="card-text" style="margin: 1rem;">教室掃除：{{ record.cleaning1 }}</p>
+    <p class="card-text" style="margin: 1rem;">特別教室掃除：{{ record.cleaning2 }}</p>
+    <p class="card-text" style="margin: 1rem;">所感：{{ record.feel }}</p>
+    <p class="card-text" style="margin: 1rem;">先生から：{{ record.teacher }}</p>
+
+    <a href="{% url 'employee:index' %}" class="card-link" style="text-decoration: none;"> ≺≺≺ back</a>
+    <!-- 改行フィルター -->
+    {{ record.text | linebreaksbr }}
+</div>
+{% endblock %}

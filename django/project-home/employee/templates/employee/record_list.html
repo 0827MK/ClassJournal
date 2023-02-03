@@ -1,0 +1,19 @@
+{% extends 'employee/base.html' %}
+<!--base.htmlのcontentを上書き-->
+    {% block content %}
+    <!--記事を一つずつ獲得できる-->
+    {% for record in record_list %}
+    <div class="card my-3" style="width: 80%;">
+        <div class="card-body">
+            <h3 class="card-header" style="background-color: #4072B3; color: white;">{{ record.created_at }}</h3>
+            <h6 class="card-subtitle mb-2 text-muted" style="margin-top: 0.3rem;">記録者：{{ record.person }}</h6>
+            <p class="card-text" style="margin: 1rem;">所感：{{ record.feel }}</p>
+            <p class="card-text" style="margin: 1rem; font-weight: bold;">先生から：{{ record.teacher }}</p>
+            <a href="{% url 'employee:detail' record.pk %}" class="card-link" style="text-decoration: none;">Show More ≻≻≻</a>
+        </div>
+    </div>
+    <!--  {% if forloop.counter <= 5 %}  -->
+    <!--  {% endif %}  -->
+    {% endfor %}
+    
+    {% endblock %}
